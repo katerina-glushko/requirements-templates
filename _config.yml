@@ -42,6 +42,7 @@ color_scheme: nil
 
 plugins:
   - jekyll-seo-tag
+  - jekyll-asciidoc
 
 compress_html:
   clippings: all
