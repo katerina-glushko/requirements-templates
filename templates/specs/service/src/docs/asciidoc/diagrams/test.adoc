@@ -1,5 +1,6 @@
+= Test
 
-[mermaid, communications, svg]
+[mermaid, pie, svg]
 ----
 pie
     "Dogs" : 386

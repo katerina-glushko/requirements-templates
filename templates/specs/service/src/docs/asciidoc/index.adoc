@@ -1,0 +1,8 @@
+:service-name: Some service
+
+= {service-name}
+
+include::some-api.adoc[]
+
+:config: config
+include::../templates/config-template.adoc[]

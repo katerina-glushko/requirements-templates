@@ -1,0 +1,14 @@
+== {service-name}. Конфигурация
+
+[source,options="nowrap"]
+----
+include::../../main/resources/config/application-local.yml[]
+----
+
+[cols="1,10",options="header"]
+|===
+|Поле |Описание
+
+include::../asciidoc/{config}.adoc[]
+
+|===
