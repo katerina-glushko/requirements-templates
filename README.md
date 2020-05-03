@@ -1,5 +1,12 @@
-# requirements-templates
-Requirements templates for System Analysts
+---
+layout: default
+title: Home
+nav_order: 1
+description: "Шаблоны требований для системных аналитиков"
+permalink: /
+---
+
+# Requirements templates for System Analysts
 
 ```mermaid
 sequenceDiagram
