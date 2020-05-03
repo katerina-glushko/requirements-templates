@@ -44,8 +44,6 @@ plugins:
   - jekyll-seo-tag
   - mermaid
 
-gems: [jekyll-mermaid]
-
 compress_html:
   clippings: all
   comments: all
