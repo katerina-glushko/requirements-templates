@@ -1,0 +1,9 @@
+management:
+  endpoints:
+    web:
+      base-path: /admin
+
+spring:
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017/local-test

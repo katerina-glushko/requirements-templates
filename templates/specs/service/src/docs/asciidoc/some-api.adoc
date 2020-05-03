@@ -1,0 +1,8 @@
+:service-name: Some service
+:method: POST
+:url: /object
+:desc: Create object
+:api-snippets: ../asciidoc/api/create
+:activity: some-api-activity
+:errors: errors
+include::../templates/api-template.adoc[]
