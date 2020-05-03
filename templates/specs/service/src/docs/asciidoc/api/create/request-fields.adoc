@@ -1,0 +1,10 @@
+|===
+|Path|Type|Description|Required|Example
+
+|`documents.[].type`
+|`String`
+|Тип документа
+|true
+|__
+
+|===
