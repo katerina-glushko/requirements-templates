@@ -42,7 +42,6 @@ color_scheme: nil
 
 plugins:
   - jekyll-seo-tag
-  - mermaid
 
 compress_html:
   clippings: all
