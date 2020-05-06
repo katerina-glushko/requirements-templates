@@ -1,0 +1,72 @@
+{
+  "0": {
+    "id": "0",
+    "title": "",
+    "content": "|spring.data.mongodb.uri|параметры подключения к MongoDB",
+    "url": "https://katerina-glushko.github.io/requirements-templates/templates/specs/service/src/docs/asciidoc/config.html",
+    "relUrl": "/templates/specs/service/src/docs/asciidoc/config.html"
+  },
+  "1": {
+    "id": "1",
+    "title": "",
+    "content": "||",
+    "url": "https://katerina-glushko.github.io/requirements-templates/templates/specs/service/src/docs/asciidoc/errors.html",
+    "relUrl": "/templates/specs/service/src/docs/asciidoc/errors.html"
+  },
+  "2": {
+    "id": "2",
+    "title": "",
+    "content": "POST /object HTTP/1.1Content-Type: text/plain;charset=UTF-8{  &quot;documents&quot;: [    {      &quot;type&quot; : &quot;first&quot;    }  ]}",
+    "url": "https://katerina-glushko.github.io/requirements-templates/templates/specs/service/src/docs/asciidoc/api/create/http-request.html",
+    "relUrl": "/templates/specs/service/src/docs/asciidoc/api/create/http-request.html"
+  },
+  "3": {
+    "id": "3",
+    "title": "Example",
+    "content": "Table of ContentsSome service. POST /object - Create objectАлгоритмRequestResponseКоды ошибокSome service. КонфигурацияSome service. POST /object - Create objectАлгоритмRequestPathTypeDescriptionRequiredExampledocuments.[].typeStringТип документаtrue__ExamplePOST /object HTTP/1.1Content-Type: text/plain;charset=UTF-8{  &quot;documents&quot;: [    {      &quot;type&quot; : &quot;first&quot;    }  ]}ResponseTable 1. Ответ при успешном определении настроек:PathTypeDescriptionRequiredExampledocuments.[].idNumberId нового документаtrue7y8454-34343documents.[].resultCodeNumberКод ошибки. 0 - нет ошибокtrue0Example{  &quot;documents&quot; : [ {    &quot;id&quot; : &quot;first&quot;,    &quot;type&quot; : &quot;first&quot;,    &quot;resultCode&quot; : 0  }]}Коды ошибокКодОписаниеSome service. Конфигурацияmanagement:  endpoints:    web:      base-path: /adminspring:  data:    mongodb:      uri: mongodb://localhost:27017/local-testПолеОписаниеspring.data.mongodb.uriпараметры подключения к MongoDB",
+    "url": "https://katerina-glushko.github.io/requirements-templates/service-spec/example",
+    "relUrl": "/service-spec/example"
+  },
+  "4": {
+    "id": "4",
+    "title": "",
+    "content": "PathTypeDescriptionRequiredExampledocuments.[].typeStringТип документаtrue__",
+    "url": "https://katerina-glushko.github.io/requirements-templates/templates/specs/service/src/docs/asciidoc/api/create/request-fields.html",
+    "relUrl": "/templates/specs/service/src/docs/asciidoc/api/create/request-fields.html"
+  },
+  "5": {
+    "id": "5",
+    "title": "",
+    "content": "{  &quot;documents&quot; : [ {    &quot;id&quot; : &quot;first&quot;,    &quot;type&quot; : &quot;first&quot;,    &quot;resultCode&quot; : 0  }]}",
+    "url": "https://katerina-glushko.github.io/requirements-templates/templates/specs/service/src/docs/asciidoc/api/create/response-body.html",
+    "relUrl": "/templates/specs/service/src/docs/asciidoc/api/create/response-body.html"
+  },
+  "6": {
+    "id": "6",
+    "title": "",
+    "content": "Table 1. Ответ при успешном определении настроек:PathTypeDescriptionRequiredExampledocuments.[].idNumberId нового документаtrue7y8454-34343documents.[].resultCodeNumberКод ошибки. 0 - нет ошибокtrue0",
+    "url": "https://katerina-glushko.github.io/requirements-templates/templates/specs/service/src/docs/asciidoc/api/create/response-fields.html",
+    "relUrl": "/templates/specs/service/src/docs/asciidoc/api/create/response-fields.html"
+  },
+  "7": {
+    "id": "7",
+    "title": "Service specification",
+    "content": "Данный формат спецификации предполагает ведение документации рядом с кодом.",
+    "url": "https://katerina-glushko.github.io/requirements-templates/service-spec",
+    "relUrl": "/service-spec"
+  },
+  "8": {
+    "id": "8",
+    "title": "",
+    "content": "Some service. POST /object - Create objectАлгоритмRequestPathTypeDescriptionRequiredExampledocuments.[].typeStringТип документаtrue__ExamplePOST /object HTTP/1.1Content-Type: text/plain;charset=UTF-8{  &quot;documents&quot;: [    {      &quot;type&quot; : &quot;first&quot;    }  ]}ResponseTable 1. Ответ при успешном определении настроек:PathTypeDescriptionRequiredExampledocuments.[].idNumberId нового документаtrue7y8454-34343documents.[].resultCodeNumberКод ошибки. 0 - нет ошибокtrue0Example{  &quot;documents&quot; : [ {    &quot;id&quot; : &quot;first&quot;,    &quot;type&quot; : &quot;first&quot;,    &quot;resultCode&quot; : 0  }]}Коды ошибокКодОписание",
+    "url": "https://katerina-glushko.github.io/requirements-templates/templates/specs/service/src/docs/asciidoc/some-api.html",
+    "relUrl": "/templates/specs/service/src/docs/asciidoc/some-api.html"
+  },
+  "9": {
+    "id": "9",
+    "title": "Templates",
+    "content": "",
+    "url": "https://katerina-glushko.github.io/requirements-templates/",
+    "relUrl": "/"
+  }
+}
