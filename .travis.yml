@@ -9,7 +9,6 @@ addons:
       - graphviz 
 env:
   global:
-    secure: ${{secrets.DEPLOY_KEY}}
+    secure: ${DEPLOY-KEY}
 before_install:
-  - yes | gem update --system --force
-  - gem install bundler
+   - gem install bundler

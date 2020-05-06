@@ -1,7 +1,5 @@
 source 'https://rubygems.org'
 
-
-gem 'bundler', '~> 2.1.4'
 gem 'jekyll', ">= 3.8.5", "< 4.1.0"
 gem 'asciidoctor', '>= 1.5.0'
 gem 'coderay', '1.1.2'
