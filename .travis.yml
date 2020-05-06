@@ -1,12 +1,10 @@
-# whitelist
 deploy:
   provider: pages
   skip_cleanup: true
-  github_token: $GH_TOKEN  # Set in the settings page of your repository, as a secure variable
+  github_token: $GH_TOKEN
   keep_history: true
   on:
     branch: master
-
 language: ruby
 rvm:
 - 2.6
@@ -16,8 +14,8 @@ addons:
   apt:
     packages:
     - graphviz
-env:
-  global:
-  - secure: ScEcStYz5ylQsd4quviJ0/wYCny5gV9jdkrUn2ZRfOiUp5IoR1DvVvfsmYXOSEm/tror4EvUCthK7EFBiF05ektaBRj5iCUHEe48qGdV9VKK59NjCNnyxI98w1AOGkEFgXiF3+nwDHzXVa9WodEHIKg5VvtyRJroVMXCbHH0mk0OYwisql8zn3AgjBjYFr5DhUyk9XTtYmd6tdwh0AYHsABr4VtwtT0DvgqQagisqiFRGhllC4RaJmSFgoVpoa870nUDRJozjCFTepHVfhuaazd8yEYI4z+QjWfp/tpg9swiu6tqovBo3W9fQMWOwzMxvVb9QpNpwil1aGdA6oKOG6mjY1BBuSZUpTf/7szswVzWSfsxBU1uYfzdHoDb6iXm9CHoYrgHzb77pcF756trf5UHgATKlbglFB3/Rj+9IPZqaJt562sdZnK16V9iqUcgS+yqMV7JbQbyiSHY+YXyro3kuoazyKHHisbtLcO+9Hk09KTMuBKMEsg6QuoAF6D2gFO9P+k5yhimZqzFaEBWI5XOpHpPaYLUUSx26rn05vW9t6I/7h9Q+/NidL1Hkw3AFkVNH81K6fDSAHZC0qwwX82sIBxTJSZ6gFM//NO9lKVbOm1/AIg5fJ3BJ7eqSJS7H4HOXiDfbJj+okFuFihv1gA7kNgFmdDGIudUv3tGWCM=
 before_install:
 - gem install bundler
+env:
+  global:
+    secure: MhIE7nF7eEO3thmv5TFbnc/wyrQJeJ6LSZm3Vw14mZulPq7WgdR2LJPVjixAihhnEEXxxirpNgzfnGE6OS0uMiNaGg3yIcw0CvQhYpjDj9CPemSz11wsdpDEPn+vqLT/L/hIXcIroEj0I6rgDrdOrmzlGQ68a4C447XVwLivb5LFC9vOOeppgoJVhIXb5KBZ9Hkj2CJ9K5nGoHnlLxcIHDb2wPoroKWF6GRTjGPQztjFjpt9AluzcSzxIcoK7iGUq43m8GXdzvTDica2AIqSajraYmNnPgwwInt/lHqaoM5BxCKL+Aj7X0lTpXC3bBC5uJugoYjFvgB3DcBuAWDxyvD6Ql2bzalBtlKyaqQ9epd5+h+hean+5mBZmgMBN/DKxlR/tQQ2OfDvGFJMdtBE2fcdaglbaoZ9xva0Ng5/28VBcaep2euosux3B/T6GQHAf1t8UNjm6fCgNvbssat7AH5MCCNJ7O1iwHQRRCMDeoQ4o0su9q+0/YksmcR6eSL9h53lrOgZxVpOZyiVvaSPuZFXp9O0zT3Pmn676M+riZzsxcLhlBI9O1obUjJd+YJ8b5K81mOOwaV5L7eUvIcc9rKxuXRqjnl69q3qj21Dayaoc7O4QPyX5AUZbmoTJvN8w24tTyPZIhEv+nLlc9nEOsRnLCNNYtjQMTKpXPesxrI=

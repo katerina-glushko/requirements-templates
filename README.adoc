@@ -3,7 +3,10 @@
 
 == Настройка CI для GitHub Pages
 
-Отличный пример для CI через travis:
+Инструкция для Travis CI:
+https://docs.travis-ci.com/user/deployment/pages/#setting-the-github-token
+
+Пример для CI через travis:
 
 NOTE: Использовать публикацию в GH Pages автоматом не получится, потому что: +
  +
