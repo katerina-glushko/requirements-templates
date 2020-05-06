@@ -1,8 +1,6 @@
----
-layout: default
-title: Tips
-parent: Service specification
-nav_order: 1
----
+= Tips
+:page-title: Tips
+:page-parent: Service specification
+:page-nav_order: 1
 
 Данный формат спецификации предполагает ведение документации рядом с кодом.
