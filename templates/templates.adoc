@@ -1,4 +1,0 @@
-= Templates
-:page-nav_order: 2
-:page-has_children: true
-:page-permalink: /

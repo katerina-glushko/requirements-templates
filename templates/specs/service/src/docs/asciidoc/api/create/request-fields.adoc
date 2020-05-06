@@ -1,3 +1,4 @@
+:page-nav_exclude: true
 |===
 |Path|Type|Description|Required|Example
 
