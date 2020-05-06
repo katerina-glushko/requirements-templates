@@ -10,4 +10,5 @@ gem 'rake-jekyll'
 group :jekyll_plugins do
   gem 'jekyll-asciidoc'
   gem 'asciidoctor-diagram' 
+  gem 'jekyll-seo-tag'
 end
