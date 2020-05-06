@@ -1,0 +1,5 @@
+= Requirements templates for System Analysts
+:toc:
+
+== How to setup CI for GitHub Pages
+https://github.com/asciidoctor/jekyll-asciidoc-quickstart
