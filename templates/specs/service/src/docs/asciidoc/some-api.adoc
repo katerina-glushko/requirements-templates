@@ -1,3 +1,4 @@
+:page-nav_exclude: true
 :service-name: Some service
 :method: POST
 :url: /object

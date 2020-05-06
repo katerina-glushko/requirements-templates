@@ -1,0 +1,15 @@
+@startuml
+
+title {method} {url}
+start
+:запрос на {desc};
+repeat
+    if (...?) then (yes)
+        :...;
+    else (no)
+        :...;
+    endif
+repeat while (все документы проверены?)
+stop
+
+@enduml

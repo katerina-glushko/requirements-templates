@@ -1,3 +1,4 @@
+:page-nav_exclude: true
 .Ответ при успешном определении настроек:
 |===
 |Path|Type|Description|Required|Example

@@ -8,15 +8,23 @@ theme: "just-the-docs"
 # in the templates via {{ site.myvariable }}.
 title: Requirements templates
 description: Шаблоны требований для системных аналитиков
-baseurl: "/requirements-templates" # the subpath of your site, e.g. /blog
-url: "https://katerina-glushko.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+# baseurl: "/requirements-templates/" # the subpath of your site, e.g. /blog
+# url: "https://katerina-glushko.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 
 #permalink: pretty
 exclude:
   - Gemfile
   - Gemfile.lock
   - Rakefile
+  - build.gradle
+  - gradlew
+  - gradlew.bat
+  - settings.gradle
+  - build/
+  - gradle/
   - README.adoc
+  - templates/specs/service/src/docs/asciidoc/**.adoc
+  - templates/specs/service/src/main
 
 # Set a path/url to a logo that will be displayed instead of the title
 #logo: "/assets/images/just-the-docs.png"
@@ -70,3 +78,4 @@ asciidoctor:
   safe: unsafe
   attributes:
     - imagesdir=/images
+    # - imagesoutdir=requirements-templates/images

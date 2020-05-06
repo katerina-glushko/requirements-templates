@@ -2,7 +2,6 @@
 :page-parent: Templates
 :page-nav_order: 1
 :page-has_children: true
-:page-permalink: /service-spec
-= Service specification
+:page-permalink: /templates/service-specification
 
 Данный формат спецификации предполагает ведение документации рядом с кодом.
