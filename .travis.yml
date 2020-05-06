@@ -1,21 +1,22 @@
 deploy:
   provider: pages
+  local-dir: ./site
   skip_cleanup: true
   github_token: $GH_TOKEN
   keep_history: true
   on:
-    branch: master
+    all_branches: true
 language: ruby
 rvm:
 - 2.6
 sudo: false
-script: bundle exec jekyll build && bundle exec rake deploy
+script: bundle exec jekyll build --destination site && bundle exec rake deploy
 addons:
   apt:
     packages:
     - graphviz
 before_install:
-- gem install bundler
+  - gem install bundler
 env:
   global:
     secure: MhIE7nF7eEO3thmv5TFbnc/wyrQJeJ6LSZm3Vw14mZulPq7WgdR2LJPVjixAihhnEEXxxirpNgzfnGE6OS0uMiNaGg3yIcw0CvQhYpjDj9CPemSz11wsdpDEPn+vqLT/L/hIXcIroEj0I6rgDrdOrmzlGQ68a4C447XVwLivb5LFC9vOOeppgoJVhIXb5KBZ9Hkj2CJ9K5nGoHnlLxcIHDb2wPoroKWF6GRTjGPQztjFjpt9AluzcSzxIcoK7iGUq43m8GXdzvTDica2AIqSajraYmNnPgwwInt/lHqaoM5BxCKL+Aj7X0lTpXC3bBC5uJugoYjFvgB3DcBuAWDxyvD6Ql2bzalBtlKyaqQ9epd5+h+hean+5mBZmgMBN/DKxlR/tQQ2OfDvGFJMdtBE2fcdaglbaoZ9xva0Ng5/28VBcaep2euosux3B/T6GQHAf1t8UNjm6fCgNvbssat7AH5MCCNJ7O1iwHQRRCMDeoQ4o0su9q+0/YksmcR6eSL9h53lrOgZxVpOZyiVvaSPuZFXp9O0zT3Pmn676M+riZzsxcLhlBI9O1obUjJd+YJ8b5K81mOOwaV5L7eUvIcc9rKxuXRqjnl69q3qj21Dayaoc7O4QPyX5AUZbmoTJvN8w24tTyPZIhEv+nLlc9nEOsRnLCNNYtjQMTKpXPesxrI=

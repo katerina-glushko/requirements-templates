@@ -1,9 +1,9 @@
 source 'https://rubygems.org'
 
-gem 'jekyll', ">= 3.8.5", "< 4.1.0"
-gem 'asciidoctor', '>= 1.5.0'
-gem 'coderay', '1.1.2'
-gem 'jekyll-plantuml', '>= 1.3.4'
+gem 'jekyll'
+gem 'asciidoctor'
+gem 'coderay'
+gem 'jekyll-plantuml'
 gem 'just-the-docs'
 gem 'rake-jekyll'
 gem 'github-pages'
