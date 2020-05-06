@@ -1,5 +1,10 @@
+:page-title: Example
+:page-parent: Service specification
+:page-permalink: /service-spec/example
+
 :service-name: Some service
 :toc: macro
+:doctype: book
 = {service-name}
 
 toc::[]
@@ -7,7 +12,6 @@ toc::[]
 include::some-api.adoc[]
 
 :config: config
-// include::../doc-templates/config-template.adoc[]
 == {service-name}. Конфигурация
 
 [source,options="nowrap"]

@@ -1,6 +1,0 @@
-= Tips
-:page-title: Tips
-:page-parent: Service specification
-:page-nav_order: 1
-
-Данный формат спецификации предполагает ведение документации рядом с кодом.

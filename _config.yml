@@ -8,11 +8,11 @@ theme: "just-the-docs"
 # in the templates via {{ site.myvariable }}.
 title: Requirements templates
 description: Шаблоны требований для системных аналитиков
-#baseurl: "/requirements-templates" # the subpath of your site, e.g. /blog
-#url: "https://katerina-glushko.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+# baseurl: "/requirements-templates" # the subpath of your site, e.g. /blog
+# url: "https://katerina-glushko.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 
-permalink: pretty
-exclude: ["node_modules/", "*.gemspec", "*.gem", "Gemfile", "Gemfile.lock", "package.json", "package-lock.json",  "script/", "LICENSE.txt", "lib/", "bin/", "README.md", "Rakefile"]
+#permalink: pretty
+# exclude: ["node_modules/", "*.gemspec", "*.gem", "Gemfile", "Gemfile.lock", "package.json", "package-lock.json",  "script/", "LICENSE.txt", "lib/", "bin/", "README.md", "Rakefile"]
 
 # Set a path/url to a logo that will be displayed instead of the title
 #logo: "/assets/images/just-the-docs.png"
@@ -59,10 +59,12 @@ compress_html:
   profile: false
 
 keep_files:
+  - /images
   - images
 asciidoctor:
   base_dir: :docdir
   safe: unsafe
   attributes:
-    imagesdir: /images
+    - imagesdir=/images
+    # - imagesoutdir=images
 #    imagesoutdir: images
