@@ -8,8 +8,8 @@ theme: "just-the-docs"
 # in the templates via {{ site.myvariable }}.
 title: Requirements templates
 description: Шаблоны требований для системных аналитиков
-# baseurl: "/requirements-templates" # the subpath of your site, e.g. /blog
-# url: "https://katerina-glushko.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "/requirements-templates" # the subpath of your site, e.g. /blog
+url: "https://katerina-glushko.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 
 #permalink: pretty
 exclude:
