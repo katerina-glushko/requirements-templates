@@ -1,12 +1,14 @@
 language: ruby
 rvm:
-  - 2.6
+- 2.6
 sudo: false
-script: bundle exec jekyll build && bundle exec rake deploy 
+script: bundle exec jekyll build && bundle exec rake deploy
 addons:
   apt:
     packages:
-      - graphviz 
+    - graphviz
 env:
   global:
-    secure: ${{secrets.DEPLOY_KEY}}
+  - secure: ScEcStYz5ylQsd4quviJ0/wYCny5gV9jdkrUn2ZRfOiUp5IoR1DvVvfsmYXOSEm/tror4EvUCthK7EFBiF05ektaBRj5iCUHEe48qGdV9VKK59NjCNnyxI98w1AOGkEFgXiF3+nwDHzXVa9WodEHIKg5VvtyRJroVMXCbHH0mk0OYwisql8zn3AgjBjYFr5DhUyk9XTtYmd6tdwh0AYHsABr4VtwtT0DvgqQagisqiFRGhllC4RaJmSFgoVpoa870nUDRJozjCFTepHVfhuaazd8yEYI4z+QjWfp/tpg9swiu6tqovBo3W9fQMWOwzMxvVb9QpNpwil1aGdA6oKOG6mjY1BBuSZUpTf/7szswVzWSfsxBU1uYfzdHoDb6iXm9CHoYrgHzb77pcF756trf5UHgATKlbglFB3/Rj+9IPZqaJt562sdZnK16V9iqUcgS+yqMV7JbQbyiSHY+YXyro3kuoazyKHHisbtLcO+9Hk09KTMuBKMEsg6QuoAF6D2gFO9P+k5yhimZqzFaEBWI5XOpHpPaYLUUSx26rn05vW9t6I/7h9Q+/NidL1Hkw3AFkVNH81K6fDSAHZC0qwwX82sIBxTJSZ6gFM//NO9lKVbOm1/AIg5fJ3BJ7eqSJS7H4HOXiDfbJj+okFuFihv1gA7kNgFmdDGIudUv3tGWCM=
+before_install:
+- gem install bundler

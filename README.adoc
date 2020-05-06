@@ -1,0 +1,37 @@
+= Requirements templates for System Analysts
+:toc:
+
+== Настройка CI для GitHub Pages
+
+Отличный пример для CI через travis:
+
+https://github.com/asciidoctor/jekyll-asciidoc-quickstart[jekyll-asciidoc-quickstart]
+
+== Запуск jekyll локально
+
+Инструкция для MacOS:
+
+Установить `bundler`, чтобы упростить установку/обновление нужных библиотек:
+```sh
+gem install bundler
+```
+
+Установить все необходимые библиотеки из `Gemfile`:
+```sh
+bundle install
+```
+
+Для корректной компилляции диаграмм установить `graphviz`:
+```sh
+brew install graphviz
+# add to PATH
+export PATH=$(brew --prefix graphviz)/bin:$PATH
+```
+
+Запустить сборку документации:
+```sh
+jekyll serve
+```
+
+Документация доступна по адресу:
+http://localhost:4000/
