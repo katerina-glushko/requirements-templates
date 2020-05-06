@@ -1,8 +1,24 @@
 :service-name: Some service
-
+:toc: macro
 = {service-name}
+
+toc::[]
 
 include::some-api.adoc[]
 
 :config: config
-include::../templates/config-template.adoc[]
+// include::../doc-templates/config-template.adoc[]
+== {service-name}. Конфигурация
+
+[source,options="nowrap"]
+----
+include::../../main/resources/config/application-local.yml[]
+----
+
+[cols="1,10",options="header"]
+|===
+|Поле |Описание
+
+include::../asciidoc/{config}.adoc[]
+
+|===

@@ -1,4 +1,5 @@
 remote_theme: pmarsceill/just-the-docs
+theme: "just-the-docs"
 
 # Site settings
 # These are used to personalize your new site. If you look in the HTML files,
@@ -10,8 +11,8 @@ description: Шаблоны требований для системных ан�
 #baseurl: "/requirements-templates" # the subpath of your site, e.g. /blog
 #url: "https://katerina-glushko.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 
-#permalink: pretty
-#exclude: ["node_modules/", "*.gemspec", "*.gem", "Gemfile", "Gemfile.lock", "package.json", "package-lock.json",  "script/", "LICENSE.txt", "lib/", "bin/", "README.md", "Rakefile"]
+permalink: pretty
+exclude: ["node_modules/", "*.gemspec", "*.gem", "Gemfile", "Gemfile.lock", "package.json", "package-lock.json",  "script/", "LICENSE.txt", "lib/", "bin/", "README.md", "Rakefile"]
 
 # Set a path/url to a logo that will be displayed instead of the title
 #logo: "/assets/images/just-the-docs.png"
@@ -42,7 +43,12 @@ color_scheme: nil
 
 plugins:
   - jekyll-seo-tag
+  - asciidoctor-diagram
   - jekyll-asciidoc
+
+whitelist:
+  - jekyll-asciidoc
+  - asciidoctor-diagram
 
 compress_html:
   clippings: all
@@ -51,3 +57,12 @@ compress_html:
   startings: []
   blanklines: false
   profile: false
+
+keep_files:
+  - images
+asciidoctor:
+  base_dir: :docdir
+  safe: unsafe
+  attributes:
+    imagesdir: /images
+#    imagesoutdir: images

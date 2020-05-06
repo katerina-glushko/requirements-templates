@@ -1,10 +1,9 @@
----
-layout: default
-title: Service specification
-parent: Templates
-nav_order: 1
-has_children: true
-permalink: /templates/specs/service
----
+= Service specification
+:page-title: Service specification
+:page-parent: Templates
+:page-nav_order: 1
+:page-has_children: true
+:page-permalink: /templates/specs/service
+:doctype: book
 
 include::src/docs/asciidoc/index.adoc[]

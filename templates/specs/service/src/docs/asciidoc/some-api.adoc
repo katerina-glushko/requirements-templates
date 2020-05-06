@@ -3,6 +3,36 @@
 :url: /object
 :desc: Create object
 :api-snippets: ../asciidoc/api/create
-:activity: some-api-activity
 :errors: errors
-include::../templates/api-template.adoc[]
+//include::../doc-templates/api-template.adoc[subs="attributes"]
+== {service-name}. {method} {url} - {desc}
+
+=== Алгоритм
+
+[plantuml,"images/some-api-activity", svg, subs="attributes"]
+----------
+include::diagrams/some-api-activity.puml[]
+----------
+
+=== Request
+include::{api-snippets}/request-fields.adoc[]
+
+==== Example
+include::{api-snippets}/http-request.adoc[]
+
+=== Response
+include::{api-snippets}/response-fields.adoc[]
+
+==== Example
+include::{api-snippets}/response-body.adoc[]
+
+
+=== Коды ошибок
+
+[cols="1,10",options="header"]
+|=========================================================
+|Код |Описание
+
+include::../asciidoc/{errors}.adoc[]
+
+|=========================================================
