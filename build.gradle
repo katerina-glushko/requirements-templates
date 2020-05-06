@@ -6,8 +6,38 @@ buildscript {
 		maven { url 'https://repo1.maven.org/maven2/' }
 	}
 	dependencies {
+		classpath 'org.asciidoctor:asciidoctor-gradle-plugin:1.6.0'
+		classpath "org.asciidoctor:asciidoctor-gradle-jvm:2.3.0"
+		classpath ('org.asciidoctor:asciidoctorj:1.6.2'){
+			exclude group: 'org.jruby'
+		}
+		classpath ('org.asciidoctor:asciidoctorj-diagram:1.5.18'){
+			exclude group: 'org.jruby'
+		}
+		classpath ('org.asciidoctor:asciidoctorj-pdf:1.5.0-alpha.16'){
+			exclude group: 'org.jruby'
+		}
+		classpath 'org.jruby:jruby:9.1.17.0'
+		classpath 'org.jruby:jruby-complete:9.1.17.0'
 	}
 }
 
 plugins {
+	id "org.asciidoctor.convert" version "2.4.0"
+}
+
+asciidoctor{
+	backends = ['pdf']
+	sourceDir "${projectDir}/templates/specs"
+	sources {
+		include "**/index.adoc"
+	}
+
+	attributes = [
+			"imagesoutdir"  : "$buildDir/asciidoc/pdf/images",
+			"imagesdir"     : "$buildDir/asciidoc/pdf/images",
+			'encoding': 'utf-8'
+	]
+
+	requires = ['asciidoctor-diagram']
 }
