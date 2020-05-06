@@ -1,8 +1,9 @@
 :page-title: Example
 :page-parent: Service specification
+:page-grand_parent: Templates
 :page-nav_order: 1
 :page-has_children: false
-:page-permalink: /templates/service-specification/example
+// :page-permalink: /templates/service-specification/example
 
 :service-name: Some service
 :toc: macro
