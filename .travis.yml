@@ -23,3 +23,5 @@ env:
 
 before_deploy:
   - echo -e "gradle*\n*.gradle\ngradle/\n/build/\n*.gem" > .gitignore
+  - find . -name \*.png -exec cp {} site/assets/images \;
+  - find . -name \*.svg -exec cp {} site/assets/images \;
