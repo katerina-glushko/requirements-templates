@@ -9,7 +9,7 @@
 
 === Алгоритм
 
-[plantuml,"some-api-activity", svg, subs="attributes"]
+[plantuml,"some-api-activity", png, subs="attributes"]
 ----------
 include::diagrams/some-api-activity.puml[]
 ----------
