@@ -78,5 +78,5 @@ asciidoctor:
   base_dir: :docdir
   safe: unsafe
   attributes:
-    - imagesdir=/requirements-templates/images
+    - imagesdir=/requirements-templates/assets/images
     - imagesoutdir=images
