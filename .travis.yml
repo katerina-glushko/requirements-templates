@@ -10,7 +10,7 @@ language: ruby
 rvm:
 - 2.6
 sudo: false
-script: bundle exec jekyll build --destination site && bundle exec rake deploy
+script: bundle exec jekyll build --destination site
 addons:
   apt:
     packages:
