@@ -26,13 +26,13 @@ include::{api-snippets}/response-fields.adoc[]
 ==== Example
 include::{api-snippets}/response-body.adoc[]
 
-
 === Коды ошибок
 
 [cols="1,10",options="header"]
 |=========================================================
 |Код |Описание
 
-include::../asciidoc/{errors}.adoc[]
+|
+|
 
 |=========================================================

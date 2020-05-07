@@ -6,13 +6,16 @@
 // :page-permalink: /templates/service-specification/example
 
 :service-name: Some service
-:toc: macro
 :doctype: book
-= {service-name}
+:toc: macro
+NOTE: Документация на сервис с названием "Some service"
 
+= {service-name}
 toc::[]
 
 include::asciidoc/some-api.adoc[]
+
+include::asciidoc/some-cron-job.adoc[]
 
 :config: config
 == {service-name}. Конфигурация
@@ -26,6 +29,7 @@ include::../main/resources/config/application-local.yml[]
 |===
 |Поле |Описание
 
-include::asciidoc/{config}.adoc[]
+|`spring.data.mongodb.uri`
+|параметры подключения к MongoDB
 
 |===
