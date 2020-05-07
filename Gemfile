@@ -4,7 +4,7 @@ gem 'jekyll'
 gem 'asciidoctor'
 gem 'coderay'
 gem 'jekyll-plantuml'
-gem 'just-the-docs'
+gem 'just-the-docs', '>=0.2.8'
 gem 'github-pages'
 
 group :jekyll_plugins do
