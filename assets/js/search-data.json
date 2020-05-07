@@ -3,15 +3,15 @@
     "id": "0",
     "title": "Example",
     "content": "Table of ContentsSome service. POST /object - Create objectАлгоритмRequestResponseКоды ошибокSome service. КонфигурацияSome service. POST /object - Create objectАлгоритмRequestPathTypeDescriptionRequiredExampledocuments.[].typeStringТип документаtrue__ExamplePOST /object HTTP/1.1Content-Type: text/plain;charset=UTF-8{  &quot;documents&quot;: [    {      &quot;type&quot; : &quot;first&quot;    }  ]}ResponseTable 1. Ответ при успешном определении настроек:PathTypeDescriptionRequiredExampledocuments.[].idNumberId нового документаtrue7y8454-34343documents.[].resultCodeNumberКод ошибки. 0 - нет ошибокtrue0Example{  &quot;documents&quot; : [ {    &quot;id&quot; : &quot;first&quot;,    &quot;type&quot; : &quot;first&quot;,    &quot;resultCode&quot; : 0  }]}Коды ошибокКодОписание:page-nav_exclude: trueSome service. Конфигурацияmanagement:  endpoints:    web:      base-path: /adminspring:  data:    mongodb:      uri: mongodb://localhost:27017/local-testПолеОписание:page-nav_exclude: truespring.data.mongodb.uriпараметры подключения к MongoDB",
-    "url": "/templates/service-specification/example",
-    "relUrl": "/templates/service-specification/example"
+    "url": "/templates/specs/service/src/docs/",
+    "relUrl": "/templates/specs/service/src/docs/"
   },
   "1": {
     "id": "1",
     "title": "Templates",
     "content": "",
-    "url": "/templates",
-    "relUrl": "/templates"
+    "url": "/templates/",
+    "relUrl": "/templates/"
   },
   "2": {
     "id": "2",
@@ -24,7 +24,7 @@
     "id": "3",
     "title": "Service specification",
     "content": "Данный формат спецификации предполагает ведение документации рядом с кодом.",
-    "url": "/templates/service-specification",
-    "relUrl": "/templates/service-specification"
+    "url": "/templates/specs/service/service-spec.html",
+    "relUrl": "/templates/specs/service/service-spec.html"
   }
 }
