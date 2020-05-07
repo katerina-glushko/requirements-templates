@@ -1,0 +1,12 @@
+@startuml
+!includeurl https://raw.githubusercontent.com/RicardoNiepel/C4-PlantUML/release/1-0/C4_Container.puml
+
+Person(admin, "Администратор")
+System_Boundary(c1, "Наша система") {
+    Container(web_app, "Web Application", "Java, SpringBoot", "Позволяет пользователям сравнивать несколько тредова из Twitter")
+}
+System_Ext(twitter, "Twitter")
+
+Rel(admin, web_app, "[1] Получить данные", "HTTPS")
+Rel(web_app, twitter, "[2] Получить твиты", "HTTPS")
+@enduml
