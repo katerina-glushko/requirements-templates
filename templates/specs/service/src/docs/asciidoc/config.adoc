@@ -1,3 +1,0 @@
-:page-nav_exclude: true
-|`spring.data.mongodb.uri`
-|параметры подключения к MongoDB
