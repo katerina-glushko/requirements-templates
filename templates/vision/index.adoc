@@ -1,0 +1,58 @@
+:page-title: Example
+:page-parent: Vision
+:page-grand_parent: Templates
+:page-nav_order: 1
+:page-has_children: false
+:doctype: book
+:toc: macro
+
+NOTE: Доработка с номером PR-3452 на существующее приложение, т.е. не требуется проработка авторизации и ролевой модели
+
+= [PR-3452] Лента твитов
+toc::[]
+
+== Глоссарий
+
+[glossary]
+Твит::
+в социальной сети Твиттер; вообще короткое сообщение, статус, видимые всем «друзьям» пользователя в социальной сети
+
+== Бизнес требования
+
+=== In-scope
+
+[plantuml,"vision-uc", png, subs="attributes"]
+----------
+include::diagrams/uc.puml[]
+----------
+
+
+=== Out-of-scope
+
+. Твиты получаются только при открытии страницы. Пока не производится автоматическое обновление списка твитов.
+. Твиты пока не подвергаются автоматической обработке.  
+
+== To be
+
+=== Схема
+
+Схема описывает возможный вариант получения списков твитов для сведения Администратора.
+
+[plantuml,"vision", png, subs="attributes"]
+----------
+include::diagrams/vision.puml[]
+----------
+
+=== Ограничения/Уточнения
+
+. Пока не продумана обработка https://developer.twitter.com/en/docs/basics/rate-limits[rate limits], предполагаем, что Администратор будет в тестовом режиме пользоваться доработкой.
+
+=== Процесс "Получение твитов"
+
+. **Администратор** открывает страницу со списком твитов в **Web Application**
+.  **Web Application** вызывает API Twitter +
+https://developer.twitter.com/en/docs/labs/tweets-and-users/quick-start/get-tweets[GET /tweets]
+
+== Приложения
+
+* https://developer.twitter.com/en/docs/basics/getting-started[API Reference Twitter]

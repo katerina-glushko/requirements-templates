@@ -1,0 +1,13 @@
+:page-nav_exclude: true
+:service-name: Some service
+:desc: Create object
+:api-snippets: ../asciidoc/api/create
+:errors: errors
+== {service-name}. {desc}
+
+=== Алгоритм
+
+[plantuml,"some-api-activity", png, subs="attributes"]
+----------
+include::diagrams/some-cron-activity.puml[]
+----------

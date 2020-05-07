@@ -1,0 +1,10 @@
+@startuml
+left to right direction
+skinparam packageStyle rectangle
+actor Администратор
+rectangle Твиты {
+  Администратор -- (Смотреть твиты)
+  (Смотреть твиты) .> (Открыть страницу с твитами) : include
+  (Выбрать теги для отбора твитов) .> (Смотреть твиты) : extends
+}
+@enduml
