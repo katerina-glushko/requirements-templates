@@ -4,9 +4,9 @@
 :page-mermaid: true
 :page-tags: [Mermaid]
 :mermaid: true
-// :page-permalink: /templates
 
-[mermaid]
-----
-include::diagrams/templates.mmd[]
-----
+
+:hardbreaks:
++++ <div id="id1"></div><script>mermaid('id1', ' +++ 
+include::diagrams/templates.mmd[] 
++++ ')</script>  +++ 
