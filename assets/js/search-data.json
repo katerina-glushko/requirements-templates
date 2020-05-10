@@ -14,7 +14,7 @@
   }
   ,"2": {
     "title": "Templates",
-    "content": "Failed to generate image: Could not find the &#39;mermaid&#39; executable in PATH; add it to the PATH or specify its location using the &#39;mermaid&#39; document attribute graph TD A[Поступление бизнес требований] --&gt;|Выработка концепции| B(Шаблон: Vision) B --&gt; |vision согласован| D{Разработка в&lt;br/&gt;микросервисной&lt;br/&gt;архитектуре?} D --&gt; |да| E(Шаблон: Service spec) B --&gt; |vision согласован| F(Шаблон: Feature spec) click B &quot;https://katerina-glushko.github.io/requirements-templates/templates/vision/vision.html&quot; &quot;Go to vision template&quot; .",
+    "content": "",
     "url": "https://katerina-glushko.github.io/requirements-templates/templates/",
     "relUrl": "/templates/"
   }
