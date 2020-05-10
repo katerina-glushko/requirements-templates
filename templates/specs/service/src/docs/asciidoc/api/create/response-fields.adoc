@@ -3,16 +3,10 @@
 |===
 |Path|Type|Description|Required|Example
 
-|`documents.[].id`
+|`id`
 |`Number`
 |Id нового документа
 |true
 |_7y8454-34343_
-
-|`documents.[].resultCode`
-|`Number`
-|Код ошибки. `0` - нет ошибок
-|true
-|_0_
 
 |===

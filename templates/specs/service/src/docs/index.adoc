@@ -4,27 +4,33 @@
 :page-nav_order: 1
 :page-has_children: false
 // :page-permalink: /templates/service-specification/example
-
-:service-name: Some service
+:sectnums:
 :doctype: book
 :toc: macro
-NOTE: Документация на сервис с названием "Some service"
+:github: https://github.com/katerina-glushko/requirements-templates/blob/master/templates
 
-= {service-name}
+NOTE: Документация на сервис с названием "Some service" +
+ + 
+{github}/specs/service/src/docs[Исходник] (для текста использован https://asciidoctor.org/docs/user-manual[Asciidoc], для диаграмм - https://plantuml.com/en/activity-diagram-beta[PlantUML])
+
+= Some service
+
 toc::[]
 
 include::asciidoc/some-api.adoc[]
 
 include::asciidoc/some-cron-job.adoc[]
 
-:config: config
-== {service-name}. Конфигурация
+include::asciidoc/some-db.adoc[]
+
+== Конфигурация
 
 [source,options="nowrap"]
 ----
 include::../main/resources/config/application-local.yml[]
 ----
 
+.Параметры конфигурации
 [cols="1,10",options="header"]
 |===
 |Поле |Описание

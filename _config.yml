@@ -1,4 +1,3 @@
-remote_theme: pmarsceill/just-the-docs
 theme: "just-the-docs"
 
 # Site settings
@@ -11,6 +10,8 @@ description: Шаблоны требований для системных ан�
 baseurl: "/requirements-templates" # the subpath of your site, e.g. /blog
 url: "https://katerina-glushko.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 
+include:
+  - _includes
 #permalink: pretty
 exclude:
   - Gemfile
@@ -25,6 +26,7 @@ exclude:
   - README.adoc
   - templates/specs/service/src/docs/asciidoc/**.adoc
   - templates/**/**.puml
+  - templates/**/**.mmd
   - templates/**/main
 
 # Set a path/url to a logo that will be displayed instead of the title

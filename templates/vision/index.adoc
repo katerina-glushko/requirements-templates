@@ -5,8 +5,13 @@
 :page-has_children: false
 :doctype: book
 :toc: macro
+:sectnums:
+:github: https://github.com/katerina-glushko/requirements-templates/blob/master/templates
 
-NOTE: Доработка с номером PR-3452 на существующее приложение, т.е. не требуется проработка авторизации и ролевой модели
+NOTE: Доработка с номером PR-3452 на существующее приложение, т.е. не требуется проработка авторизации и ролевой модели +
+ + 
+{github}/vision/index.adoc[Исходник] (для текста использован https://asciidoctor.org/docs/user-manual[Asciidoc], для диаграмм - https://plantuml.com/en/use-case-diagram[PlantUML] и шаблон https://github.com/RicardoNiepel/C4-PlantUML[C4])
+
 
 = [PR-3452] Лента твитов
 toc::[]

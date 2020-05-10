@@ -1,10 +1,23 @@
 :page-nav_exclude: true
+.Поля тела запроса
 |===
 |Path|Type|Description|Required|Example
 
-|`documents.[].type`
-|`String`
+|`type`
+| String
 |Тип документа
+|true
+|__
+
+| `attributes.amount`
+| Float
+| Сумма
+|true
+|__
+
+| `attributes.currency`
+| String
+| Валюта
 |true
 |__
 

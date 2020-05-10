@@ -3,13 +3,13 @@
 title {method} {url}
 start
 :запрос на {desc};
-repeat
-    if (...?) then (yes)
-        :...;
+    :найти запись в БД\n**коллекция**: objects;
+    if (объект не найден?) then (yes)
+        :сохранить новую запись в БД;
+        :подготовить ответ\nHTTP status 201 Created\nвернуть id нового объекта;
     else (no)
-        :...;
+        :подготовить ответ\nHTTP status 303 See other\nвернуть id\nсуществующего объекта;
     endif
-repeat while (все документы проверены?)
 stop
 
 @enduml
