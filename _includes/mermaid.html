@@ -1,7 +1,6 @@
-<script async 
-  src="https://unpkg.com/mermaid@8.5.0/dist/mermaid.min.js">
-</script>
+<script type="text/javascript" src="https://unpkg.com/mermaid@8.5.0/dist/mermaid.min.js" ></script>
 <script>mermaid.initialize({startOnLoad:true});</script>
+
 <script>
 
 $(document).ready(function() {
@@ -9,28 +8,23 @@ $(document).ready(function() {
         theme: 'forest'
     });
 });
-</script>
-
-<script>
-  export function setup(helper) {
-   if(!helper.markdownIt) { return; }
-
-   helper.whiteList(['div.mermaid']);
-
-   helper.registerPlugin(md=>{
-      md.inline.bbcode.ruler.push('mermaid',{
-        tag: 'mermaid',
-        replace: function(state, tagInfo, content) {
-          let token;
-          token = state.push('code_inline', 'code', 0);
-          state.push('div_open', 'div', 1);
-          token.attrs = [['class', 'mermaid']];
-          token.content = content;
-          state.push('div_close', 'div', -1);
-          return true;
-        }
-      });
-   });
+function mermaid(id, text){
+  var code = decodeHtml(text.replace(/<br\s*[\/]?>/gi, "\n").trim());
+  console.log(code);
+  var newDiv = document.createElement("div");
+  newDiv.setAttribute('class', 'mermaid');
+  var newContent = document.createTextNode(code);
+  newDiv.appendChild(newContent);
+  var currentDiv = document.getElementById(id); 
+  currentDiv.appendChild(newDiv); 
 }
+
+function decodeHtml(html) {
+    var txt = document.createElement("textarea");
+    txt.innerHTML = html;
+    return txt.value.replace(/→/gi, '->');
+}
+
 </script>
+
 
