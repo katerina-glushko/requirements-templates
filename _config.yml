@@ -82,3 +82,6 @@ asciidoctor:
   attributes:
     - imagesdir=/requirements-templates/assets/images
     - imagesoutdir=images
+
+mermaid:
+  src: https://unpkg.com/mermaid@8.5.0/dist/mermaid.min.js
