@@ -1,11 +1,10 @@
 :page-nav_exclude: true
-:service-name: Some service
 :method: POST
 :url: /object
-:desc: Create object
+:desc: Создать объект
 :api-snippets: ../asciidoc/api/create
 :errors: errors
-== {service-name}. {method} {url} - {desc}
+== {method} {url} - {desc}
 
 === Алгоритм
 

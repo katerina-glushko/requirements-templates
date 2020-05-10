@@ -1,4 +1,12 @@
 :page-title: Templates
 :page-nav_order: 2
 :page-has_children: true
+:page-mermaid: true
+:page-tags: [Mermaid]
+:mermaid: true
 // :page-permalink: /templates
+
+[mermaid]
+----
+include::diagrams/templates.mmd[]
+----

@@ -1,9 +1,5 @@
 :page-nav_exclude: true
-:service-name: Some service
-:desc: Create object
-:api-snippets: ../asciidoc/api/create
-:errors: errors
-== {service-name}. {desc}
+== Изменение статуса
 
 === Алгоритм
 

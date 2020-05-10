@@ -1,11 +1,7 @@
 :page-nav_exclude: true
-[source,options="nowrap"]
+[source, json, options="nowrap"]
 ----
 {
-  "documents" : [ {
-    "id" : "first",
-    "type" : "first",
-    "resultCode" : 0
-  }]
+  "id" : "12324"
 }
 ----

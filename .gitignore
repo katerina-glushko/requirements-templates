@@ -51,6 +51,7 @@ site/
 .sass-cache/
 .jekyll-cache/
 .jekyll-metadata
+**/images/
 
 #Ruby
 *.gem
