@@ -1,0 +1,10 @@
+{
+    "_id":"5b71597452faff00018ef5fb",
+    "userId":"13213",
+    "createdDate":"2019-08-13T07:12:04.832Z",
+    "type" : "first",
+    "attributes": {
+        "amount": 1.00,
+        "currency": "USD"
+    }
+}

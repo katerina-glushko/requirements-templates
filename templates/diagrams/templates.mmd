@@ -1,0 +1,7 @@
+graph TD
+    A[Поступление бизнес требований] -->|Выработка концепции| B(Шаблон: Vision)
+    B --> |vision согласован| D{Разработка в<br/>микросервисной<br/>архитектуре?}
+    D --> |да| E(Шаблон: Service spec)
+    B --> |vision согласован| F(Шаблон: Feature spec)
+
+    click B "https://katerina-glushko.github.io/requirements-templates/templates/vision/vision.html" "Go to vision template"
