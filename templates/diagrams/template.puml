@@ -1,0 +1,75 @@
+@startuml
+skinparam maxmessagesize 300
+skinparam defaultFontName Arial
+skinparam dpi 200
+'skinparam backgroundColor White
+skinparam sequence {
+    ArrowColor black
+    ActorBorderColor black
+    LifeLineBorderColor black
+    LifeLineBackgroundColor #white
+    ParticipantBorderColor black
+    ParticipantBackgroundColor white
+    ParticipantFontColor black
+    ActorBackgroundColor black
+    ActorFontColor black
+}
+skinparam Activity{
+    BackgroundColor #white
+    DiamondBackgroundColor  #white
+    BorderColor #black
+    DiamondBorderColor  #black
+}
+!definelong  self(a, desc)
+    a->a : desc
+!enddefinelong
+!definelong  self(a, desc, inval)
+    a->a : desc\n[inval]
+!enddefinelong
+!definelong  start(a,b,num, desc, inval, color)
+    a->b : **[num]** desc\n[inval]
+    activate a
+    activate b #color
+!enddefinelong
+!definelong  start_unchanged(a,b,num, desc, in)
+    start(a,b,num, desc, in, White)
+!enddefinelong
+!definelong call_unchanged(a,b,num, desc, in, out)
+    start(a,b,num, desc, in, White)
+    end(b,a,num, out )
+!enddefinelong
+!definelong call_uws(a,num, desc, in, out, uwsname, eqname)
+    start_unchanged(a, uws, C.num, desc\n**uwsname**, in)
+        call_unchanged(uws, eq, C.num, desc\neqname, in, out)
+    end(uws, a, C.num, out)
+!enddefinelong
+!definelong call_uws_non_eq(a, noneq, num, desc, in, out, uwsname)
+    start_unchanged(a, uws, C.num, desc\n**uwsname**, in)
+        call_unchanged(uws, noneq, C.num, desc, in, out)
+    end(uws, a, C.num, out)
+!enddefinelong
+!definelong  start_changed(a,b,num, desc, in)
+    start(a,b,num, desc, in, LightSteelBlue)
+!enddefinelong
+!definelong  start_new(a,b,num, desc, in)
+    start(a,b,num, desc, in, Gold)
+!enddefinelong
+!definelong  end(a,b,num,out)
+    a-->b: **[num]**\n[out]
+    deactivate b
+    deactivate a
+!enddefinelong
+'!define SHOW_LEGEND
+'----------------------------------------------------
+
+'----------------------------------------------------
+!ifdef SHOW_LEGEND
+legend right
+    Легенда
+    | Цвет | Статус |
+    |<#White>| без изменения |
+    |<#Gold>| новый |
+    |<#LightSteelBlue>| изменен|
+endlegend
+!endif
+@enduml
