@@ -1,40 +1,122 @@
-{
-  
-  "0": {
+{"0": {
+    "doc": "Example",
+    "title": "[PR-3452] Лента твитов",
+    "content": "Table of Contents . | [PR-3452] Лента твитов . | 1. Глоссарий | 2. Бизнес требования . | 2.1. In-scope | 2.2. Out-of-scope | . | 3. To be . | 3.1. Схема | 3.2. Ограничения/Уточнения | 3.3. Процесс \"Получение твитов\" | . | 4. Приложения | . | . ",
+    "url": "https://katerina-glushko.github.io/requirements-templates/templates/vision/#pr-3452-%D0%BB%D0%B5%D0%BD%D1%82%D0%B0-%D1%82%D0%B2%D0%B8%D1%82%D0%BE%D0%B2",
+    "relUrl": "/templates/vision/#pr-3452-лента-твитов"
+  },"1": {
+    "doc": "Example",
+    "title": "1. Глоссарий",
+    "content": "Твит в социальной сети Твиттер; вообще короткое сообщение, статус, видимые всем «друзьям» пользователя в социальной сети . ",
+    "url": "https://katerina-glushko.github.io/requirements-templates/templates/vision/#%D0%B3%D0%BB%D0%BE%D1%81%D1%81%D0%B0%D1%80%D0%B8%D0%B9",
+    "relUrl": "/templates/vision/#глоссарий"
+  },"2": {
+    "doc": "Example",
+    "title": "2. Бизнес требования",
+    "content": "2.1. In-scope . 2.2. Out-of-scope . | Твиты получаются только при открытии страницы. Пока не производится автоматическое обновление списка твитов. | Твиты пока не подвергаются автоматической обработке. | . ",
+    "url": "https://katerina-glushko.github.io/requirements-templates/templates/vision/#%D0%B1%D0%B8%D0%B7%D0%BD%D0%B5%D1%81-%D1%82%D1%80%D0%B5%D0%B1%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F",
+    "relUrl": "/templates/vision/#бизнес-требования"
+  },"3": {
+    "doc": "Example",
+    "title": "3. To be",
+    "content": "3.1. Схема . Схема описывает возможный вариант получения списков твитов для сведения Администратора. 3.2. Ограничения/Уточнения . | Пока не продумана обработка rate limits, предполагаем, что Администратор будет в тестовом режиме пользоваться доработкой. | . 3.3. Процесс \"Получение твитов\" . | Администратор открывает страницу со списком твитов в Web Application . | Web Application вызывает API Twitter GET /tweets . | . ",
+    "url": "https://katerina-glushko.github.io/requirements-templates/templates/vision/#to-be",
+    "relUrl": "/templates/vision/#to-be"
+  },"4": {
+    "doc": "Example",
+    "title": "4. Приложения",
+    "content": ". | API Reference Twitter . | . ",
+    "url": "https://katerina-glushko.github.io/requirements-templates/templates/vision/#%D0%BF%D1%80%D0%B8%D0%BB%D0%BE%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F",
+    "relUrl": "/templates/vision/#приложения"
+  },"5": {
+    "doc": "Example",
     "title": "Example",
-    "content": "Note | Доработка с номером PR-3452 на существующее приложение, т.е. не требуется проработка авторизации и ролевой модели Исходник (для текста использован Asciidoc, для диаграмм - PlantUML и шаблон C4) | . [PR-3452] Лента твитов . Table of Contents [PR-3452] Лента твитов 1. Глоссарий | 2. Бизнес требования 2.1. In-scope | 2.2. Out-of-scope | . | 3. To be 3.1. Схема | 3.2. Ограничения/Уточнения | 3.3. Процесс &quot;Получение твитов&quot; | . | 4. Приложения | . | . 1. Глоссарий . Твит в социальной сети Твиттер; вообще короткое сообщение, статус, видимые всем «друзьям» пользователя в социальной сети . 2. Бизнес требования . 2.1. In-scope . 2.2. Out-of-scope . Твиты получаются только при открытии страницы. Пока не производится автоматическое обновление списка твитов. . | Твиты пока не подвергаются автоматической обработке. . | 3. To be . 3.1. Схема . Схема описывает возможный вариант получения списков твитов для сведения Администратора. . 3.2. Ограничения/Уточнения . Пока не продумана обработка rate limits, предполагаем, что Администратор будет в тестовом режиме пользоваться доработкой. . | 3.3. Процесс &quot;Получение твитов&quot; . Администратор открывает страницу со списком твитов в Web Application . | Web Application вызывает API Twitter GET /tweets . | 4. Приложения . API Reference Twitter . | .",
+    "content": "| Note | Доработка с номером PR-3452 на существующее приложение, т.е. не требуется проработка авторизации и ролевой модели Исходник (для текста использован Asciidoc, для диаграмм - PlantUML и шаблон C4) | . ",
     "url": "https://katerina-glushko.github.io/requirements-templates/templates/vision/",
     "relUrl": "/templates/vision/"
-  }
-  ,"1": {
+  },"6": {
+    "doc": "Example",
+    "title": "Some service",
+    "content": "Table of Contents . | Some service . | 1. POST /object - Создать объект . | 1.1. Алгоритм | 1.2. Request | 1.3. Response | 1.4. Коды ошибок | . | 2. Изменение статуса . | 2.1. Алгоритм | . | 3. Хранилище сервиса. MongoDB . | 3.1. Коллекции | 3.2. Структура | . | 4. Конфигурация | . | . ",
+    "url": "https://katerina-glushko.github.io/requirements-templates/templates/specs/service/src/docs/#some-service",
+    "relUrl": "/templates/specs/service/src/docs/#some-service"
+  },"7": {
+    "doc": "Example",
+    "title": "1. POST /object - Создать объект",
+    "content": "1.1. Алгоритм . 1.2. Request . Table 1. Поля тела запроса | Path | Type | Description | Required | Example | . | type . | String . | Тип документа . | true . | __ . | . | attributes.amount . | Float . | Сумма . | true . | __ . | . | attributes.currency . | String . | Валюта . | true . | __ . | . 1.2.1. Example . POST /object HTTP/1.1 Content-Type: text/plain;charset=UTF-8 { \"type\" : \"first\", \"attributes\": { \"amount\": 1.00, \"currency\": \"USD\" } } . 1.3. Response . Table 2. Ответ при успешном определении настроек: | Path | Type | Description | Required | Example | . | id . | Number . | Id нового документа . | true . | 7y8454-34343 . | . 1.3.1. Example . { \"id\" : \"12324\" } . 1.4. Коды ошибок . | Код | Описание | . | | | . ",
+    "url": "https://katerina-glushko.github.io/requirements-templates/templates/specs/service/src/docs/#post-object-%D1%81%D0%BE%D0%B7%D0%B4%D0%B0%D1%82%D1%8C-%D0%BE%D0%B1%D1%8A%D0%B5%D0%BA%D1%82",
+    "relUrl": "/templates/specs/service/src/docs/#post-object-создать-объект"
+  },"8": {
+    "doc": "Example",
+    "title": "2. Изменение статуса",
+    "content": "2.1. Алгоритм . ",
+    "url": "https://katerina-glushko.github.io/requirements-templates/templates/specs/service/src/docs/#%D0%B8%D0%B7%D0%BC%D0%B5%D0%BD%D0%B5%D0%BD%D0%B8%D0%B5-%D1%81%D1%82%D0%B0%D1%82%D1%83%D1%81%D0%B0",
+    "relUrl": "/templates/specs/service/src/docs/#изменение-статуса"
+  },"9": {
+    "doc": "Example",
+    "title": "3. Хранилище сервиса. MongoDB",
+    "content": "3.1. Коллекции . objects - сохраненные объекты . 3.1.1. Пример . { \"_id\":\"5b71597452faff00018ef5fb\", \"userId\":\"13213\", \"createdDate\":\"2019-08-13T07:12:04.832Z\", \"type\" : \"first\", \"attributes\": { \"amount\": 1.00, \"currency\": \"USD\" } } . 3.2. Структура . Table 3. Параметры сохраненного объекта | Параметр | Тип | Описание | . | _id . | ObjectId . | Идентификатор объекта (автогенерация в БД) . | . | createdDate . | Date . | Дата создания попытки подписания. Пример: 2019-08-13T07:12:04.832Z(без таймзоны, т.е. по Гринвичу) . | . | userId . | String . | Идентификатор владельца документа . | . | type . | String . | Тип объекта . | . | attributes.amount . | Float . | Сумма . | . | attributes.currency . | String . | Валюта . | . ",
+    "url": "https://katerina-glushko.github.io/requirements-templates/templates/specs/service/src/docs/#%D1%85%D1%80%D0%B0%D0%BD%D0%B8%D0%BB%D0%B8%D1%89%D0%B5-%D1%81%D0%B5%D1%80%D0%B2%D0%B8%D1%81%D0%B0-mongodb",
+    "relUrl": "/templates/specs/service/src/docs/#хранилище-сервиса-mongodb"
+  },"10": {
+    "doc": "Example",
+    "title": "4. Конфигурация",
+    "content": "management: endpoints: web: base-path: /admin spring: data: mongodb: uri: mongodb://localhost:27017/local-test . Table 4. Параметры конфигурации | Поле | Описание | . | spring.data.mongodb.uri . | параметры подключения к MongoDB . | . ",
+    "url": "https://katerina-glushko.github.io/requirements-templates/templates/specs/service/src/docs/#%D0%BA%D0%BE%D0%BD%D1%84%D0%B8%D0%B3%D1%83%D1%80%D0%B0%D1%86%D0%B8%D1%8F",
+    "relUrl": "/templates/specs/service/src/docs/#конфигурация"
+  },"11": {
+    "doc": "Example",
     "title": "Example",
-    "content": "Note | Документация на сервис с названием &quot;Some service&quot; Исходник (для текста использован Asciidoc, для диаграмм - PlantUML) | . Some service . Table of Contents Some service 1. POST /object - Создать объект 1.1. Алгоритм | 1.2. Request | 1.3. Response | 1.4. Коды ошибок | . | 2. Изменение статуса 2.1. Алгоритм | . | 3. Хранилище сервиса. MongoDB 3.1. Коллекции | 3.2. Структура | . | 4. Конфигурация | . | . 1. POST /object - Создать объект . 1.1. Алгоритм . 1.2. Request . Table 1. Поля тела запроса Path Type Description Required Example . type . | String . | Тип документа . | true . | __ . | . attributes.amount . | Float . | Сумма . | true . | __ . | . attributes.currency . | String . | Валюта . | true . | __ . | . 1.2.1. Example . POST /object HTTP/1.1 Content-Type: text/plain;charset=UTF-8 { &quot;type&quot; : &quot;first&quot;, &quot;attributes&quot;: { &quot;amount&quot;: 1.00, &quot;currency&quot;: &quot;USD&quot; } } . 1.3. Response . Table 2. Ответ при успешном определении настроек: Path Type Description Required Example . id . | Number . | Id нового документа . | true . | 7y8454-34343 . | . 1.3.1. Example . { &quot;id&quot; : &quot;12324&quot; } . 1.4. Коды ошибок . Код Описание . | | . 2. Изменение статуса . 2.1. Алгоритм . 3. Хранилище сервиса. MongoDB . 3.1. Коллекции . objects - сохраненные объекты . 3.1.1. Пример . { &quot;_id&quot;:&quot;5b71597452faff00018ef5fb&quot;, &quot;userId&quot;:&quot;13213&quot;, &quot;createdDate&quot;:&quot;2019-08-13T07:12:04.832Z&quot;, &quot;type&quot; : &quot;first&quot;, &quot;attributes&quot;: { &quot;amount&quot;: 1.00, &quot;currency&quot;: &quot;USD&quot; } } . 3.2. Структура . Table 3. Параметры сохраненного объекта Параметр Тип Описание . _id . | ObjectId . | Идентификатор объекта (автогенерация в БД) . | . createdDate . | Date . | Дата создания попытки подписания. Пример: 2019-08-13T07:12:04.832Z(без таймзоны, т.е. по Гринвичу) . | . userId . | String . | Идентификатор владельца документа . | . type . | String . | Тип объекта . | . attributes.amount . | Float . | Сумма . | . attributes.currency . | String . | Валюта . | . 4. Конфигурация . management: endpoints: web: base-path: /admin spring: data: mongodb: uri: mongodb://localhost:27017/local-test . Table 4. Параметры конфигурации Поле Описание . spring.data.mongodb.uri . | параметры подключения к MongoDB . | .",
+    "content": "| Note | Документация на сервис с названием \"Some service\" Исходник (для текста использован Asciidoc, для диаграмм - PlantUML) | . ",
     "url": "https://katerina-glushko.github.io/requirements-templates/templates/specs/service/src/docs/",
     "relUrl": "/templates/specs/service/src/docs/"
-  }
-  ,"2": {
+  },"12": {
+    "doc": "Templates",
     "title": "Templates",
-    "content": ".",
+    "content": ". ",
     "url": "https://katerina-glushko.github.io/requirements-templates/templates/",
     "relUrl": "/templates/"
-  }
-  ,"3": {
+  },"13": {
+    "doc": "Getting started",
     "title": "Getting started",
-    "content": "",
+    "content": " ",
     "url": "https://katerina-glushko.github.io/requirements-templates/",
     "relUrl": "/"
-  }
-  ,"4": {
+  },"14": {
+    "doc": "Service specification",
+    "title": "Спецификация на сервис",
+    "content": "| Этап . | В процессе разработки сервиса . | . | Описание . | Подробное описание функций и параметров сервиса . | . | Автор . | . | &#10003; Системный аналитик . | . | . | Цель . | Постанока задачи на доработку, чтобы . | &#10003; Разработчик понимал все детали требуемой доработки . | . Сопроводительное описание сервиса, поддерживаемое в актуальном состоянии, чтобы . | &#10003; Support использовал в случае разбора инцидента или необходимости изменить конфигурацию . | &#10003; Системные аналитики разбирались в возможностях сервиса на случай использования или необходимости доработки . | . | . | Целевая аудитория . | . | &#10003; Системные администраторы (Support) . | &#10003; Системные аналитики . | &#10003; Разработка . | . | . ",
+    "url": "https://katerina-glushko.github.io/requirements-templates/templates/specs/service/service-spec.html#%D1%81%D0%BF%D0%B5%D1%86%D0%B8%D1%84%D0%B8%D0%BA%D0%B0%D1%86%D0%B8%D1%8F-%D0%BD%D0%B0-%D1%81%D0%B5%D1%80%D0%B2%D0%B8%D1%81",
+    "relUrl": "/templates/specs/service/service-spec.html#спецификация-на-сервис"
+  },"15": {
+    "doc": "Service specification",
+    "title": "Структура",
+    "content": " ",
+    "url": "https://katerina-glushko.github.io/requirements-templates/templates/specs/service/service-spec.html#%D1%81%D1%82%D1%80%D1%83%D0%BA%D1%82%D1%83%D1%80%D0%B0",
+    "relUrl": "/templates/specs/service/service-spec.html#структура"
+  },"16": {
+    "doc": "Service specification",
     "title": "Service specification",
-    "content": "Note | Данный формат спецификации предполагает ведение документации рядом с кодом. | . Спецификация на сервис . Этап . В процессе разработки сервиса . | . Описание . Подробное описание функций и параметров сервиса . | . Автор . &#10003; Системный аналитик . | . | . Цель . Постанока задачи на доработку, чтобы . &#10003; Разработчик понимал все детали требуемой доработки . | . Сопроводительное описание сервиса, поддерживаемое в актуальном состоянии, чтобы . &#10003; Support использовал в случае разбора инцидента или необходимости изменить конфигурацию . | &#10003; Системные аналитики разбирались в возможностях сервиса на случай использования или необходимости доработки . | . | . Целевая аудитория . &#10003; Системные администраторы (Support) . | &#10003; Системные аналитики . | &#10003; Разработка . | . | . Структура .",
+    "content": "| Note | Данный формат спецификации предполагает ведение документации рядом с кодом. | . ",
     "url": "https://katerina-glushko.github.io/requirements-templates/templates/specs/service/service-spec.html",
     "relUrl": "/templates/specs/service/service-spec.html"
-  }
-  ,"5": {
+  },"17": {
+    "doc": "Vision",
     "title": "Vision",
-    "content": "Note | Данный формат предназначен для предварительной проработки решения по новой доработке | . Vision . Этап . После получения бизнес требований . | . Описание . Предварительное описание вариантов технического решения . | . Автор . &#10003; Архитектор . | &#10003; Системный аналитик . | . | . Цель . Минимальными усилиями зафиксировать возможное решение, чтобы . &#10003; предварительно согласовать с архитекторами . | &#10003; получить предварительные оценки от разработки . | . | . Целевая аудитория . &#10003; Архитекторы . | &#10003; Разработка . | . | . Структура .",
+    "content": "| Этап . | После получения бизнес требований . | . | Описание . | Предварительное описание вариантов технического решения . | . | Автор . | . | &#10003; Архитектор . | &#10003; Системный аналитик . | . | . | Цель . | Минимальными усилиями зафиксировать возможное решение, чтобы . | &#10003; предварительно согласовать с архитекторами . | &#10003; получить предварительные оценки от разработки . | . | . | Целевая аудитория . | . | &#10003; Архитекторы . | &#10003; Разработка . | . | . ",
+    "url": "https://katerina-glushko.github.io/requirements-templates/templates/vision/vision.html#vision",
+    "relUrl": "/templates/vision/vision.html#vision"
+  },"18": {
+    "doc": "Vision",
+    "title": "Структура",
+    "content": " ",
+    "url": "https://katerina-glushko.github.io/requirements-templates/templates/vision/vision.html#%D1%81%D1%82%D1%80%D1%83%D0%BA%D1%82%D1%83%D1%80%D0%B0",
+    "relUrl": "/templates/vision/vision.html#структура"
+  },"19": {
+    "doc": "Vision",
+    "title": "Vision",
+    "content": "| Note | Данный формат предназначен для предварительной проработки решения по новой доработке | . ",
     "url": "https://katerina-glushko.github.io/requirements-templates/templates/vision/vision.html",
     "relUrl": "/templates/vision/vision.html"
   }
-  
 }
