@@ -34,6 +34,10 @@ skinparam Activity{
 !definelong  start_unchanged(a,b,num, desc, in)
     start(a,b,num, desc, in, White)
 !enddefinelong
+!definelong call_new(a,b,num, desc, in, out)
+    start(a,b,num, desc, in, Gold)
+    end(b,a,num, out )
+!enddefinelong
 !definelong call_unchanged(a,b,num, desc, in, out)
     start(a,b,num, desc, in, White)
     end(b,a,num, out )
