@@ -1,0 +1,90 @@
+@startuml
+allow_mixing
+left to right direction
+skinparam linetype polyline
+hide empty methods
+hide empty attributes
+hide circle
+skinparam packageFontSize 20
+skinparam svgDimensionStyle false
+!definelong main_table(ws, name)
+database ODPS{
+namespace ws{
+    entity ws.name as "ws.<size:16>**name**</size>" #PowderBlue
+}
+}
+!enddefinelong
+!definelong main_table(ws, name, desc)
+database ODPS{
+namespace ws{
+    entity ws.name as "ws.<size:16>**name**</size>\n<size:10>desc</size>" #PowderBlue
+}
+}
+!enddefinelong
+!definelong main_table(ws, name, desc, ttl_value)
+database ODPS{
+namespace ws{
+    entity ws.name as "ws.<size:16>**name**</size>\n<size:10>desc</size>\nTTL: ttl_value <size:10>days" #PowderBlue
+}
+}
+!enddefinelong
+!definelong our_table(ws, name)
+database ODPS{
+namespace ws{
+    entity ws.name as "ws.<size:16>**name**</size>" #DarkSeaGreen
+}
+}
+!enddefinelong
+!definelong our_table(ws, name, desc)
+database ODPS{
+namespace ws{
+    entity ws.name as "ws.<size:16>**name**</size>\n<size:10>desc</size>" #DarkSeaGreen
+}
+}
+!enddefinelong
+!definelong our_table(ws, name, desc, ttl_value)
+database ODPS{
+namespace ws{
+    entity ws.name as "ws.<size:16>**name**</size>\n<size:10>desc</size>\nTTL: ttl_value <size:10>days" #DarkSeaGreen
+}
+}
+!enddefinelong
+!definelong table(ws, name)
+database ODPS{
+namespace ws{
+    entity ws.name as "ws.<size:16>**name**</size>" #LightYellow
+}
+}
+!enddefinelong
+!definelong table(ws, name,desc)
+database ODPS{
+namespace ws{
+    entity ws.name as "ws.<size:16>**name**</size>\n<size:10>desc</size>" #LightYellow
+}
+}
+!enddefinelong
+!definelong table(ws, name,desc, ttl_value)
+database ODPS{
+namespace ws{
+    entity ws.name as "ws.<size:16>**name**</size>\n<size:10>desc</size>\nTTL: ttl_value <size:10>days" #LightYellow
+}
+}
+!enddefinelong
+!definelong tmp_table(ws, name,desc)
+database ODPS{
+namespace ws{
+    entity ws.name as "ws.<size:16>**name**</size>\n<size:10>desc</size>" #LightGrey
+}
+}
+!enddefinelong
+!definelong mysql_table(ws, name)
+database ws{
+    entity ws.name as "ws.<size:16>**name**</size>" #LightYellow
+}
+!enddefinelong
+!definelong mysql_table(ws, name,desc)
+database ws{
+    entity ws.name as "ws.<size:16>**name**</size>\n<size:10>desc</size>" #LightYellow
+}
+!enddefinelong
+@enduml
