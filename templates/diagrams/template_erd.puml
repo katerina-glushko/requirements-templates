@@ -22,7 +22,7 @@ set namespaceSeparator //
     !return $res
 !endfunction
 !unquoted function field($name, $desc='', $is_primary=0, $is_foreign=0)
-    !$res = '<size:12><b>' + $name + '</b></size>'
+    !$res = '<size:12>' + $name + '</size>'
     !if ($is_primary==1)
         !$res = '<&key> <color:green>' + $res
     !endif
