@@ -6,9 +6,9 @@ hide empty attributes
 hide circle
 set namespaceSeparator //
 
-!unquoted function object($name, $aer_name='', $desc='', $subdesc='')
+!unquoted function object($name, $alt_name='', $desc='', $subdesc='')
     !if ($aer_name!='')
-        !$res = 'class '+ $aer_name + ' as "<size:16>**' + $name + '**</size>' + '\n<size:12><color:dimgrey>' + $aer_name
+        !$res = 'class '+ $alt_name + ' as "<size:16>**' + $name + '**</size>' + '\n<size:12><color:dimgrey>' + $alt_name
     !else
         !$res = 'class '+ $name + ' as "<size:16>**' + $name + '**</size>'
     !endif
