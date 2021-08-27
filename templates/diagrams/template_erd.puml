@@ -1,0 +1,40 @@
+@startuml
+left to right direction
+allow_mixing
+hide empty methods
+hide empty attributes
+hide circle
+set namespaceSeparator //
+
+!unquoted function object($name, $aer_name='', $desc='', $subdesc='')
+    !if ($aer_name!='')
+        !$res = 'class '+ $aer_name + ' as "<size:16>**' + $name + '**</size>' + '\n<size:12><color:dimgrey>' + $aer_name
+    !else
+        !$res = 'class '+ $name + ' as "<size:16>**' + $name + '**</size>'
+    !endif
+    !if ($desc!='')
+        !$res = $res+ '\n<size:10>'+$desc
+    !endif
+    !if ($subdesc!='')
+        !$res = $res+ '\n<size:10>'+$subdesc
+    !endif
+    !$res=$res+'"'
+    !return $res
+!endfunction
+!unquoted function field($name, $desc='', $is_primary=0, $is_foreign=0)
+    !$res = '<size:12><b>' + $name + '</b></size>'
+    !if ($is_primary==1)
+        !$res = '<&key> <color:green>' + $res
+    !endif
+    !if ($is_foreign==1)
+        !$res = '<&link-intact> <color:blue>' + $res
+    !endif
+    !if ($desc!='')
+        !$res = $res+ '<color:black> - <i>'+$desc
+    !endif
+    !return $res
+!endfunction
+hide methods
+hide stereotypes
+
+@enduml
