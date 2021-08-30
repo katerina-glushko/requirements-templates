@@ -29,7 +29,7 @@ set namespaceSeparator //
         !if ($is_foreign==1)
             !$res = '<&link-intact> <color:blue>' + $res
         !else
-            !$res = '   '+ $res
+            !$res = '<size:12>   ' + $name + '</size>'
         !endif
     !endif
     !if ($desc!='')
