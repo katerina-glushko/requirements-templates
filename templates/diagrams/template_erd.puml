@@ -14,20 +14,23 @@ set namespaceSeparator //
     !endif
     !if ($desc!='')
         !$res = $res+ '\n<size:10>'+$desc
-    !endif
-    !if ($subdesc!='')
-        !$res = $res+ '\n<size:10>'+$subdesc
+        !if ($subdesc!='')
+            !$res = $res+ '\n<size:10>'+$subdesc
+        !endif
     !endif
     !$res=$res+'"'
     !return $res
 !endfunction
 !unquoted function field($name, $desc='', $is_primary=0, $is_foreign=0)
-    !$res = '<size:12>   ' + $name + '</size>'
+    !$res = '<size:12>' + $name + '</size>'
     !if ($is_primary==1)
         !$res = '<&key> <color:green>' + $res
-    !endif
-    !if ($is_foreign==1)
-        !$res = '<&link-intact> <color:blue>' + $res
+    !else
+        !if ($is_foreign==1)
+            !$res = '<&link-intact> <color:blue>' + $res
+        !else
+            !$res = '   '+ $res
+        !endif
     !endif
     !if ($desc!='')
         !$res = $res+ '<color:black> - <i>'+$desc
