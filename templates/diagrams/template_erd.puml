@@ -42,7 +42,7 @@ hide methods
 hide stereotypes
 
 
-!$legend_show=0
+'!$legend_show=0
 !if ($legend_show==1)
 legend right
    |= arrow |= desc|
