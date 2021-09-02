@@ -1,5 +1,6 @@
 @startuml
 left to right direction
+skinparam legendBackgroundColor white
 allow_mixing
 hide empty methods
 hide empty attributes
@@ -41,7 +42,7 @@ hide methods
 hide stereotypes
 
 
-legend
+legend right
    |= arrow |= desc|
    | <img:http://www.plantuml.com/plantuml/png/VOvBJWH1243tTGekC0jlCBQ95_04J1NJHOQ23j3fj9-xgz55HurBtYCFpf7ekGufGjU4D72UUq9ZfvfiMkB6kg3ZW0lMs-osQdimCOTqrFXGf7dO4bRAVI5OJFRFeNHk13IMt65GTcjnH9ZfV5cJlcbbhqA7O1MCU3JDhwjRv_nJF_4pmTrF0ozb-kVloRoH_-PlXqvqRBQnpd152IhtS3hPAqpbJDhM8Uy0> | Zero or \n One |
    | <img:http://www.plantuml.com/plantuml/png/VOvHJWD1243_vnHSe1_UeAw95_04T8Rka3Am0JRDQhsx6ltOgEadxv47nqZqN8SKeND26ZZFFQ6nKqqsBN5XNT1nm0dhPNPRjJsPc4CwQdmgqjnj2IlbjX0i9jlNK3et0XfBRZ0ekxNO8ynqFgr9FxIoLw5Ti0f6F9lczzLhv_nNl_0hmSDl0szbklFtPDx8__BtNISwDhkopd162IgFS3ZSRZ2L8sbRXtm0> | Exactly \n One |
