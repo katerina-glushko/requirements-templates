@@ -9,7 +9,7 @@ set namespaceSeparator //
 
 !$urlbase=''
 !unquoted function object($name, $alt_name='', $desc='', $subdesc='', $show_code=0, $add_url=1)
-    !if (($add_url==1) && ($urlbase!=''))
+    !if (($add_url==1) && ($urlbase!='') && (%strpos($name,' ')<0))
         !$showname = $urlbase + $name + $urlend + ' ' + $name + ']]'
     !else
         !$showname = $name
