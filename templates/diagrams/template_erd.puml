@@ -7,16 +7,12 @@ hide empty attributes
 hide circle
 set namespaceSeparator //
 
-!unquoted function object($name, $alt_name='', $desc='', $subdesc='', $show_code=0)
-    !if ($show_code==1)
-        !if ($alt_name=='')
-            !$res = 'class '+ $name + ' as "<size:16>**' + $name + '**</size>' + '\n<size:12><color:dimgrey>' + $name
-        !else
-            !$res = 'class '+ $alt_name + ' as "<size:16>**' + $name + '**</size>' + '\n<size:12><color:dimgrey>' + $alt_name
-        !endif
+!unquoted function object($name, $alt_name='', $desc='', $subdesc='', $show_code=1)
+    !if ($alt_name=='')
+        !$res = 'class '+ $name + ' as "<size:16>**' + $name + '**</size>'
     !else
-        !if ($alt_name=='')
-            !$res = 'class '+ $name + ' as "<size:16>**' + $name + '**</size>'
+        !if ($show_code==1)
+            !$res = 'class '+ $alt_name + ' as "<size:16>**' + $name + '**</size>' + '\n<size:12><color:dimgrey>' + $alt_name
         !else
             !$res = 'class '+ $alt_name + ' as "<size:16>**' + $name + '**</size>'
         !endif
