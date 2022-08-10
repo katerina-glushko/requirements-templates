@@ -7,14 +7,20 @@ hide empty attributes
 hide circle
 set namespaceSeparator //
 
+!$urlbase=''
 !unquoted function object($name, $alt_name='', $desc='', $subdesc='', $show_code=0)
+    !if ($urlbase) && ($urlbase!='')
+        !$showname = $urlbase + $name + $urlend + ' ' + $name + ']]'
+    !else
+        !$showname = $name
+    !endif
     !if ($alt_name=='')
-        !$res = 'class '+ $name + ' as "<size:16>**' + $name + '**</size>'
+        !$res = 'class '+ $name + ' as "<size:16>**' + $showname + '**</size>'
     !else
         !if ($show_code==1)
-            !$res = 'class '+ $alt_name + ' as "<size:16>**' + $name + '**</size>' + '\n<size:12><color:dimgrey>' + $alt_name
+            !$res = 'class '+ $alt_name + ' as "<size:16>**' + $showname + '**</size>' + '\n<size:12><color:dimgrey>' + $alt_name
         !else
-            !$res = 'class '+ $alt_name + ' as "<size:16>**' + $name + '**</size>'
+            !$res = 'class '+ $alt_name + ' as "<size:16>**' + $showname + '**</size>'
         !endif
     !endif
     !if ($desc!='')
