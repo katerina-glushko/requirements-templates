@@ -8,8 +8,8 @@ hide circle
 set namespaceSeparator //
 
 !$urlbase=''
-!unquoted function object($name, $alt_name='', $desc='', $subdesc='', $show_code=0)
-    !if ($urlbase) && ($urlbase!='')
+!unquoted function object($name, $alt_name='', $desc='', $subdesc='', $show_code=0, $add_url=1)
+    !if ($add_url==1) && ($urlbase) && ($urlbase!='')
         !$showname = $urlbase + $name + $urlend + ' ' + $name + ']]'
     !else
         !$showname = $name
